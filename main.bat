@@ -29,14 +29,13 @@ echo  └───────────ur ip address - 2 - run ipconfig
 choice /c 12 >nul
 if "%errorlevel%" EQU "1" (
     cd files
-	cd nc
+	curl -O https://raw.githubusercontent.com/blazebrown87221/ncmuti-curl-verison/main/files/nc/nc.exe
 	echo starting to listen...
 	start nc -l -p 25565
 	pause
 	goto start
 ) else if "%errorlevel%" EQU "2" (
-    cd files
-	cd yourip
+        https://raw.githubusercontent.com/blazebrown87221/ncmuti-curl-verison/main/files/yourip/yourip.bat
 	start yourip.bat
     pause
     goto start
