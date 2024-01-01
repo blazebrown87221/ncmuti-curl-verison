@@ -35,7 +35,7 @@ if "%errorlevel%" EQU "1" (
 	pause
 	goto start
 ) else if "%errorlevel%" EQU "2" (
-        https://raw.githubusercontent.com/blazebrown87221/ncmuti-curl-verison/main/files/yourip/yourip.bat
+        curl https://raw.githubusercontent.com/blazebrown87221/ncmuti-curl-verison/main/files/yourip/yourip.bat
 	start yourip.bat
     pause
     goto start
