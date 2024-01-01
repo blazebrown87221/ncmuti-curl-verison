@@ -18,14 +18,14 @@ echo              [36m██  ██ ██ ██      ██  ██  ██ 
 ping localhost -n 2 >nul
 echo              [36m██   ████  ██████ ██      ██  ██████     ██    ██ [0m
 echo .
-echo .
+echo 		       curl mode.
 echo .
 echo .
 :input                                          
 ping localhost -n 2 >nul
 echo ─┬───────net cat - 1 - listener - port:25565
 ping localhost -n 2 >nul
-echo  └───────────ur ip address - 2 - run ipconfig
+echo  └───────────ur ip address - 2 - run ipconfig [not in curl mode]
 choice /c 12 >nul
 if "%errorlevel%" EQU "1" (
     cd files
@@ -35,8 +35,7 @@ if "%errorlevel%" EQU "1" (
 	pause
 	goto start
 ) else if "%errorlevel%" EQU "2" (
-        curl https://raw.githubusercontent.com/blazebrown87221/ncmuti-curl-verison/main/files/yourip/yourip.bat
-	start yourip.bat
+    echo ERROR: 404
     pause
     goto start
 )
